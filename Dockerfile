@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # hadolint global ignore=DL3041,DL3013,DL4006
-FROM public.ecr.aws/amazonlinux/amazonlinux:2023.5.20240916.0@sha256:feeb91e31912e7b3739d9cee4bc2181262f54688bc4fbd21069f3cedce03fa4f
+FROM public.ecr.aws/amazonlinux/amazonlinux:2023.6.20241010.1@sha256:441220eb6a6052dd1e283a361a345b580725c2d71fe5a9f3c68f69a67af985ce
 
 COPY . /app
 WORKDIR /app
