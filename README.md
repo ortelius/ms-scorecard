@@ -40,6 +40,9 @@ ortelius-ms-scorecard
 - Summary  
 Health
 
+- Operation id  
+health_health_get
+
 - Description  
 This health check end point used by Kubernetes
 
@@ -49,7 +52,7 @@ This health check end point used by Kubernetes
 
 `application/json`
 
-```ts
+```typescript
 {
   status?: string
   service_name?: string
@@ -63,25 +66,28 @@ This health check end point used by Kubernetes
 - Summary  
 Get Scorecard
 
+- Operation id  
+get_scorecard_msapi_scorecard_get
+
 #### Parameters(Query)
 
-```ts
+```typescript
 frequency?: Partial(string) & Partial(null)
 ```
 
-```ts
+```typescript
 environment?: Partial(string) & Partial(null)
 ```
 
-```ts
+```typescript
 lag?: Partial(string) & Partial(null)
 ```
 
-```ts
+```typescript
 appname?: Partial(string) & Partial(null)
 ```
 
-```ts
+```typescript
 appid?: Partial(string) & Partial(null)
 ```
 
@@ -91,7 +97,7 @@ appid?: Partial(string) & Partial(null)
 
 `application/json`
 
-```ts
+```typescript
 {
   domain?: string
 []
@@ -103,7 +109,7 @@ appid?: Partial(string) & Partial(null)
 
 `application/json`
 
-```ts
+```typescript
 {
   detail: {
     loc?: Partial(string) & Partial(integer)[]
@@ -117,7 +123,7 @@ appid?: Partial(string) & Partial(null)
 
 ### #/components/schemas/HTTPValidationError
 
-```ts
+```typescript
 {
   detail: {
     loc?: Partial(string) & Partial(integer)[]
@@ -129,7 +135,7 @@ appid?: Partial(string) & Partial(null)
 
 ### #/components/schemas/ScoreCard
 
-```ts
+```typescript
 {
   domain?: string
 []
@@ -139,7 +145,7 @@ appid?: Partial(string) & Partial(null)
 
 ### #/components/schemas/StatusMsg
 
-```ts
+```typescript
 {
   status?: string
   service_name?: string
@@ -148,7 +154,7 @@ appid?: Partial(string) & Partial(null)
 
 ### #/components/schemas/ValidationError
 
-```ts
+```typescript
 {
   loc?: Partial(string) & Partial(integer)[]
   msg: string
