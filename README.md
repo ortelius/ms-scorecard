@@ -15,6 +15,7 @@
 
 ortelius-ms-scorecard
 
+
 ## Path Table
 
 | Method | Path | Description |
@@ -115,6 +116,8 @@ appid?: Partial(string) & Partial(null)
     loc?: Partial(string) & Partial(integer)[]
     msg: string
     type: string
+    ctx: {
+    }
   }[]
 }
 ```
@@ -129,6 +132,8 @@ appid?: Partial(string) & Partial(null)
     loc?: Partial(string) & Partial(integer)[]
     msg: string
     type: string
+    ctx: {
+    }
   }[]
 }
 ```
@@ -159,5 +164,7 @@ appid?: Partial(string) & Partial(null)
   loc?: Partial(string) & Partial(integer)[]
   msg: string
   type: string
+  ctx: {
+  }
 }
 ```
